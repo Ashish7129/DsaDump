@@ -26,12 +26,12 @@ public class InOrderTraversalIterative {
         node.right.left=new TreeNode(6);
         node.right.right=new TreeNode(7);
 
-        for (Integer integer : preOrderTraversalIterative(node)) {
+        for (Integer integer : inOrderTraversalIterative(node)) {
             System.out.print(integer+" ");
         }
     }
-
-    private List<Integer> preOrderTraversalIterative(TreeNode node) {
+      
+    private List<Integer> inOrderTraversalIterative(TreeNode node) {
         List<Integer> result=new LinkedList<>();
         if(node==null){
             return result;
